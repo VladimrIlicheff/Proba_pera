@@ -1,14 +1,8 @@
-# print("x y z w") 
-# for x in range(2):
-#   for y in range(2):
-#    for z in range(2):
-#     for w in range(2):
-#       if not ((w and z) or not y or (not x == (not w))):
-#         print(x, y, z, w)
-n = int(input())
-m = int(input())
+# 2. Напишите программу, которая на вход принимает 5 чисел и находит максимальное из них.
 
-if n == m ** 2 or m == n ** 2:
- print("Yes")
-else:
- print("No")
+num_max = 0
+for i in range (5):
+  num = int(input())
+if num_max < num:
+   num_max = num
+print(num_max)
